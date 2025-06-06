@@ -32,7 +32,7 @@ This is a simple color sequence memory game inspired by Simon game. The goal is 
 
 Visit this page to play the game. Have fun!
 
-![Simon Game](https://koustav2908.github.io/simon-game/)
+[Simon Game](https://koustav2908.github.io/simon-game/)
 
 ## 🛠️ Technologies Used
 
