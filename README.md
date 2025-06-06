@@ -16,7 +16,7 @@ This is a simple color sequence memory game inspired by Simon game. The goal is 
 
 -   Press any key to restart
 
-## Featues
+## 🧩 Featues
 
 -   Random color sequence generation
 
@@ -28,13 +28,13 @@ This is a simple color sequence memory game inspired by Simon game. The goal is 
 
 -   Simple and responsive design
 
-## Play the Game
+## 🕹️ Play the Game
 
 Visit this page to play the game. Have fun!
 
 ![Simon Game](https://koustav2908.github.io/simon-game/)
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 -   HTML
 -   CSS
