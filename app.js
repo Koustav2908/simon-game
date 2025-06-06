@@ -1,17 +1,17 @@
 let gameSeq = [];
 let userSeq = [];
 
-let btns = ['pink', 'yellow', 'blue', 'orange'];
+let btns = ["pink", "yellow", "blue", "orange"];
 
 let started = false;
 let level = 0;
 
-let h2 = document.querySelector('h2');
-let allBtns = document.querySelectorAll('.btn');
+let h2 = document.querySelector("h2");
+let allBtns = document.querySelectorAll(".btn");
 
-document.addEventListener('keypress', function () {
+document.addEventListener("keypress", function () {
     if (!started) {
-        console.log('Game started');
+        console.log("Game started");
         started = true;
 
         levelUp();
@@ -19,16 +19,16 @@ document.addEventListener('keypress', function () {
 });
 
 function gameFlash(btn) {
-    btn.classList.add('gameFlash');
+    btn.classList.add("gameFlash");
     setTimeout(function () {
-        btn.classList.remove('gameFlash');
+        btn.classList.remove("gameFlash");
     }, 150);
 }
 
 function userFlash(btn) {
-    btn.classList.add('userFlash');
+    btn.classList.add("userFlash");
     setTimeout(function () {
-        btn.classList.remove('userFlash');
+        btn.classList.remove("userFlash");
     }, 150);
 }
 
@@ -54,9 +54,9 @@ function checkAns(index) {
         }
     } else {
         h2.innerHTML = `Game Over!!!<br> <b>Your score was ${level}<b> <br> Press any key to restart...`;
-        document.querySelector('body').style.backgroundColor = 'red';
+        document.querySelector("body").style.backgroundColor = "red";
         setTimeout(() => {
-            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector("body").style.backgroundColor = "white";
         }, 150);
         reset();
     }
@@ -66,14 +66,14 @@ function btnPress() {
     let btn = this;
     userFlash(btn);
 
-    userColor = btn.getAttribute('id');
+    userColor = btn.getAttribute("id");
     userSeq.push(userColor);
 
     checkAns(userSeq.length - 1);
 }
 
 for (let btn of allBtns) {
-    btn.addEventListener('click', btnPress);
+    btn.addEventListener("click", btnPress);
 }
 
 function reset() {

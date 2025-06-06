@@ -1,16 +1,75 @@
-# Simon Says Game
- A simple game using HTML, CSS and JavaScript
+# 🧠 Simon Game (Color Memory Game)
 
- ## Description
- -Simon says is an electronic game of short-term memory skill invented by Ralph H. Bear and Howard J. Morrison. The game creates a sequence of lights and requires an user to repeat the sequence. If the user succeeds, the series becomes progressively longer and more complex. Once the user fails, the game is over.
+This is a simple color sequence memory game inspired by Simon game. The goal is to memorize and repeat the sequence of colors as it grows longer with each level.
 
- ## Featues
- -A four button board with 4 colors reprenting the game board and an user can click the 4 buttons in a sequence.
+## 🎮 How to Play
 
- ## Technologies Used
- -HTML
- -CSS
- -JavaScript
+-   Press any key to start the game
 
- ## Installation
- To view locally, clone the repository and open 'index.html' in your browser.
+-   A color will flash — remember it
+
+-   Click the color buttons in the same order
+
+-   With each level, a new color is added to the sequence
+
+-   If you make a mistake, the game ends and your score (level) is shown
+
+-   Press any key to restart
+
+## Featues
+
+-   Random color sequence generation
+
+-   User and game sequences tracked and compared
+
+-   Visual feedback using flashing effects
+
+-   Score display on game over
+
+-   Simple and responsive design
+
+## Play the Game
+
+Visit this page to play the game. Have fun!
+
+![Simon Game](https://koustav2908.github.io/simon-game/)
+
+## Technologies Used
+
+-   HTML
+-   CSS
+-   JavaScript
+
+## 📁 Project Structure
+
+-   `index.html` – Main structure and buttons
+
+-   `style.css` – Styling for buttons and animations
+
+-   `script.js` – Core game logic
+
+## 🧪 Game Logic Overview
+
+-   The game maintains two arrays:
+
+    -   `gameSeq` – the correct sequence
+
+    -   `userSeq` – the player's input
+
+-   On each level, a new color is randomly added to the `gameSeq`
+
+-   When the user clicks a button, it's checked against the `gameSeq`
+
+-   If the full sequence matches, the game moves to the next level
+
+-   On mismatch, the game resets and displays the score
+
+## 🚀 Getting Started
+
+To run the game locally:
+
+1. Clone or download the project
+
+2. Open `index.html` in your browser
+
+3. Start playing!
